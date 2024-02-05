@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <!-- ş,ç,ğ,ü,ö, ğ, ı, İ,  Non latin karakter desteği   -->
+    <meta charset="utf-8" />
+
+    <!-- Web sayfamın arama motoru sonuç sayfasında görünecek özet çıklaması  -->
+    <meta name="description" content="Html için tanıtıcı bir giriş" />
+
+    <title>Html hiper linkler</title>
+  </head>
+
+  <body>
+    <h1>Hiper linkler</h1>
+
+    <a href="https://wikipedia.com">Wikipedia sayfasına gider.</a>
+
+    <!-- a etiketinin target attribute'unun _blank değeri linkin yeni sekmede açılmasını sağlar-->
+    <p>
+      Bahriye Üçok (10 Mayıs 1919, Trabzon - 6 Ekim 1990, Ankara), Türk tarihçi,
+      ilahiyat akademisyeni ve siyasetçidir. Türkiye'nin ilk kadın ilahiyatçısı
+      olan Üçok, Türkiye'de İslam tarihi, İslam'da kadınların yeri ve laiklik
+      gibi konular üzerine çalışmalar yürüttü ve çeşitli kitaplar yayımladı.
+      Siyasete girdiği 1971 yılından itibaren 1990 yılına kadar cumhuriyet
+      senatörlüğü, milletvekilliği gibi görevler üstlendi. Aktif siyaset yaptığı
+      dönemde hem mecliste hem senatoda laiklik, irtica ve Türkiye'deki dinî
+      konularla ilgili konuşmalar yaptı ve çözüm önerileri sundu.
+      <a
+        href="https://tr.wikipedia.org/wiki/Ordu_(il)"
+        target="_blank"
+        title="Ordu"
+        >Ordu</a
+      >
+      'daki ilk ve orta öğreniminin ardından İstanbul'daki Kandilli Kız
+      Lisesinde eğitim gördü.
+    </p>
+
+    <!-- bir resime link vermek -->
+
+    <h2>Nikola Tesla</h2>
+    <a href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank">
+      <img
+        src="./images/Tesla_circa_1890.jpeg"
+        alt="Nikola Tesla"
+        width="100"
+        title="Nikola Tesla"
+      />
+    </a>
+
+    <!-- Bir ikona ve yazıya link vermek-->
+
+    <h2>İkon ve yazıya link vermek</h2>
+
+    <a href="https://github.com">
+      Github
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" width="40">
+        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
+        />
+      </svg>
+    </a>
+
+    <h2>Özgeçmişler</h2>
+
+    <h3>Reyhan Gündüz</h3>
+    <a href="./documents/ReyhanCigdemCvEnSonHali.pdf" target="_blank"
+      >Özgeçmiş</a
+    >
+
+    <h3>SHOHZOD İRGAŞ</h3>
+
+    <a href="./documents/Shohzodİrgaş_ENG.pdf" target="_blank">Özgeçmiş</a>
+
+    <h2>Bir iç (proje içi, internal) fotoğraf dosyasına link vermek</h2>
+    <a href="./images/Tesla_circa_1890.jpeg"
+      >Nikola Tesla fotoğrafı için tıklayın</a
+    >
+
+    <!-- DO NOT !  -->
+
+    <a href="https://amazon.com"> <h2>Amazon.com sitesine gider</h2> </a>
+
+    <!-- DO -->
+    <h2><a href="https://amazon.com"> Amazon.com sitesine gider </a></h2>
+  </body>
+</html>
