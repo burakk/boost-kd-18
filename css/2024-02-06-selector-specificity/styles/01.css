@@ -1,0 +1,35 @@
+div {
+  border: 2px solid black;
+}
+
+header {
+  border: 2px solid blue;
+}
+
+main {
+  border: 2px solid red;
+  background-color: white;
+}
+
+footer {
+  border: 2px solid blue;
+}
+
+/* main'ın alt öğesi olan p elemanları */
+main p {
+  color: blue;
+}
+
+p {
+  /*  color özelliği text rengini değiştirmek için kullanılır   */
+  color: red;
+}
+
+html body div header p {
+  color: pink;
+}
+
+/* !important -> use with caution */
+footer p {
+  color: lightgray !important;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <!-- ş,ç,ğ,ü,ö, ı, İ,  Non latin karakter desteği   -->
+    <meta charset="utf-8" />
+
+    <!-- Web sayfamın arama motoru sonuç sayfasında görünecek özet çıklaması  -->
+    <meta name="description" content="Html için tanıtıcı bir giriş" />
+
+    <title>Temel bölgesel etiketler</title>
+  </head>
+
+  <body>
+    <!-- division (bölüm ) more generic, less semantic, birden fazla kullanabilirsiniz -->
+    <div>
+      <!-- Tasarımsal bir alanın en üst bölümü  more semantic, less generic, birden fazla kullanabilirsiniz -->
+      <header>
+        <h1>
+          <a href="index.html">My Logo</a>
+        </h1>
+
+        <!-- Navigation -->
+        <nav>
+          <a href="index.html">Ana sayfa</a>
+          <a href="about.html">Hakkımda</a>
+          <a href="works.html">Çalışmalarım</a>
+          <a href="contact.html">İletişim</a>
+        </nav>
+      </header>
+      <!-- Bir dökümanda bir adet kullanılabilir. -->
+      <main>
+        <!-- Contact Form -->
+        <form action="/contact_me" method="get">
+          <label for="email">Epostanız:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Epostanızı giriniz"
+            required
+            minlength="10"
+            maxlength="200"
+          />
+
+          <label for="message">Mesajınız:</label>
+
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Mesajınızı yazınız"
+            required
+            minlength="20"
+            maxlength="400"
+          ></textarea>
+
+          <button type="submit">Gönder</button>
+        </form>
+      </main>
+      <!-- Birden fazla kullanılabilir. Alanın en alt bölümünü ifade eder, more semantic, less generic -->
+      <footer>
+        <!-- Nav social -->
+
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.github.com" target="_blank">
+                <img src="./images/github-alt.svg" alt="github" width="24" />
+                Github</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com" target="_blank">
+                <img src="./images/linkedin.svg" alt="linkedin" width="24" />
+                Linkedin</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

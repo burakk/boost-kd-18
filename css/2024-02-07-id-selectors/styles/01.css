@@ -1,0 +1,44 @@
+body {
+  /*   font ailesini değiştirmeliyim - IBM PLEX MONO - fonts.google.com    */
+  font-family: "IBM Plex Mono", monospace;
+  /* fallback */
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/*
+
+eleman ismi -> p, eleman ismi  eleman ismi 
+class ismi -> p.basic
+id ismi -> p#the-one
+
+*/
+
+#root {
+  border: 1px solid black;
+}
+
+#root > header {
+  border: 1px solid blue;
+}
+
+main {
+  border: 1px solid red;
+}
+#root > footer {
+  border: 1px solid blue;
+}
+
+/* --- logos --- */
+.logo a {
+  color: black;
+}
+.logo i {
+  color: orangered;
+}
+
+
+.logo.sm i, .logo.sm a{ font-size:12px}

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  margin: 24px 0;
+}
+
+#root {
+  margin: 48px;
+}
+
+#root > header {
+  padding-bottom: 24px;
+}
+
+main {
+  border: 4px solid rgb(148, 195, 195);
+  border-left: none;
+  border-right: none;
+  padding: 24px 0;
+}
+
+main > section {
+  margin: 48px 0;
+}
+
+main > section > h1 {
+  margin-bottom: 24px;
+}
+
+#root > footer {
+  padding-top: 24px;
+}
+
+/* ---- Components ---- */
+
+/* ::: CARD ::: */
+.card {
+  border: 2px solid blue;
+  width: 300px;
+}
+
+.card header h2 {
+  font-size: 1.2rem;
+}
+
+.card figure img {
+  width: 100%;
+  height: 200px;
+
+  object-fit: contain;
+  object-position: center;
+}
+
+.card.promotion::after, .card.promotion::before{
+  content: "Promosyonlu Ürün";
+  border: 3px solid red;
+  font-size:0.7rem;
+  letter-spacing: 2px;
+}
+
+
+/* ::: BUTTON ::: */
+.btn {
+  background-color: orange;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frontend Development" />
+    <title>
+      Cross browser code writing - Tarayıclar arasın tutatrlı çalışan kod yazmak
+    </title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/01.css" />
+
+    <!-- Ibm plex mono fonts.google.com-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font ikon sağlayıcısının sana gönderdiği css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- 
+
+    div#root>header+main+footer
+    -->
+    <div id="root">
+      <header>
+        <h1 class="logo">Css ölçü birimleri</h1>
+      </header>
+      <main>
+        <section>
+          <h1>"px" piksel ölçü birimi</h1>
+          <p>Esnek olmayan bir ölçü birimidir.</p>
+
+          <div class="container">
+            <div class="box type-1">
+              <p>50px * 50px</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>"%" yüzde ölçü birimi</h1>
+          <p>
+            Esnek ve göreli bir ölçü birimidir. Bir çocuk öğe için 100% genişlik
+            ebeveynin tüm genişliği üzerinden tanımlanır. Bir çocuk öğe için
+            100% yükseklik ebeveynin tüm yüksekliği üzerinden tanımlanır.
+          </p>
+
+          <div class="container">
+            <div class="box type-2">
+              <p>50% * 50px</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>"rem" root em ölçü birimi</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, harum!
+          </p>
+
+          <div class="container">
+            <div class="box type-3">
+              <p>10rem * 10rem</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>"em" em ölçü birimi</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, harum!
+          </p>
+
+          <div class="container">
+            <div class="box type-4">
+              <p>10em * 10em</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- vw, vh, vmin, vmax -->
+      </main>
+      <footer>
+        <p>boost kd-18</p>
+      </footer>
+    </div>
+  </body>
+</html>

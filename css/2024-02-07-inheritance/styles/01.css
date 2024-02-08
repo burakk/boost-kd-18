@@ -1,0 +1,29 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+  color: red;
+}
+
+body.dark-theme {
+  color: white;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+  border: 1px solid black;
+}
+
+#root > header {
+  border: 1px solid blue;
+}
+
+main {
+  border: 1px solid red;
+}
+#root > footer {
+  border: 1px solid blue;
+}

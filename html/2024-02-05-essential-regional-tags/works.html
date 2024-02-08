@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <!-- ş,ç,ğ,ü,ö, ı, İ,  Non latin karakter desteği   -->
+    <meta charset="utf-8" />
+
+    <!-- Web sayfamın arama motoru sonuç sayfasında görünecek özet çıklaması  -->
+    <meta name="description" content="Html için tanıtıcı bir giriş" />
+
+    <title>Temel bölgesel etiketler</title>
+  </head>
+
+  <body>
+    <!-- division (bölüm ) more generic, less semantic, birden fazla kullanabilirsiniz -->
+    <div>
+      <!-- Tasarımsal bir alanın en üst bölümü  more semantic, less generic, birden fazla kullanabilirsiniz -->
+      <header>
+        <h1>
+          <a href="index.html">My Logo</a>
+        </h1>
+
+        <!-- Navigation -->
+        <nav>
+          <a href="index.html">Ana sayfa</a>
+          <a href="about.html">Hakkımda</a>
+          <a href="works.html">Çalışmalarım</a>
+          <a href="contact.html">İletişim</a>
+        </nav>
+      </header>
+      <!-- Bir dökümanda bir adet kullanılabilir. -->
+      <main>
+        <section>
+          <h1>Tüm işlerim</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
+            delectus?
+          </p>
+
+          <!-- liste için ul (unordered list ), ol ( ordered list )   -->
+          <ul>
+            <li>İş 1</li>
+            <li>İş 2</li>
+            <li>İş 3</li>
+            <li>İş 4</li>
+            <li>İş 5</li>
+            <li>İş 6</li>
+            <li>İş 7</li>
+          </ul>
+        </section>
+      </main>
+      <!-- Birden fazla kullanılabilir. Alanın en alt bölümünü ifade eder, more semantic, less generic -->
+      <footer>
+        <!-- Nav social -->
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.github.com" target="_blank">
+                <img src="./images/github-alt.svg" alt="github" width="24" />
+                Github</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com" target="_blank">
+                <img src="./images/linkedin.svg" alt="linkedin" width="24" />
+                Linkedin</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

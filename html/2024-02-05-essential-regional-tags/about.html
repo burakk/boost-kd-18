@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <!-- ş,ç,ğ,ü,ö, ı, İ,  Non latin karakter desteği   -->
+    <meta charset="utf-8" />
+
+    <!-- Web sayfamın arama motoru sonuç sayfasında görünecek özet çıklaması  -->
+    <meta name="description" content="Html için tanıtıcı bir giriş" />
+
+    <title>Temel bölgesel etiketler</title>
+  </head>
+
+  <body>
+    <!-- division (bölüm ) more generic, less semantic, birden fazla kullanabilirsiniz -->
+    <div>
+      <!-- Tasarımsal bir alanın en üst bölümü  more semantic, less generic, birden fazla kullanabilirsiniz -->
+      <header>
+        <h1>
+          <a href="index.html">My Logo</a>
+        </h1>
+
+        <!-- Navigation -->
+        <nav>
+          <a href="index.html">Ana sayfa</a>
+          <a href="about.html">Hakkımda</a>
+          <a href="works.html">Çalışmalarım</a>
+          <a href="contact.html">İletişim</a>
+        </nav>
+      </header>
+      <!-- Bir dökümanda bir adet kullanılabilir. -->
+      <main>
+        <section>
+          <!-- Banner -->
+          <h1>Hakkımda daha detaylı</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore,
+            amet?
+          </p>
+        </section>
+
+        <section>
+          <h1>Sertifikalar</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
+            delectus?
+          </p>
+        </section>
+
+        <section>
+          <h1>Youtube video</h1>
+          <!--  youtube.com ai bbc video  -->
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/LK5j3pp0Too?si=k9ITS7BWgWwSw6LF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+      
+          <iframe src="https://www.wikipedia.com" width="560" height="315">
+          </iframe>
+        </section>
+      </main>
+      <!-- Birden fazla kullanılabilir. Alanın en alt bölümünü ifade eder, more semantic, less generic -->
+      <footer>
+        <!-- Nav social -->
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.github.com" target="_blank">
+                <img src="./images/github-alt.svg" alt="github" width="24" />
+                Github</a
+              >
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com" target="_blank">
+                <img src="./images/linkedin.svg" alt="linkedin" width="24" />
+                Linkedin</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

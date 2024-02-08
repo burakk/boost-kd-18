@@ -1,0 +1,80 @@
+*{
+  box-sizing:border-box; /* öğelere verilen width ve heigt, border ve padding dahil hesaplanır. */
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body.dark-theme {
+  color: white;
+  background-color: black;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1 strong {
+  background-color: black;
+  color: pink;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+  border: 1px solid black;
+}
+
+#root > header {
+  border: 1px solid blue;
+}
+
+main {
+  border: 1px solid red;
+}
+
+main .box {
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+  font-size:24px;
+}
+
+main .box.blue {
+  border-color: blue;
+  margin:24px; /* çerçeve dışı boşluk */
+  padding:24px; 
+
+ 
+
+  padding-top:24px;
+  padding-right:24px;
+  padding-bottom:24px;
+  padding-left:24px;
+
+  /* CW Clock Wise - TOP, RIGHT, BOTTOM, LEFT  */
+  /* üst 16px sağ 8px alt 24px sol 32px */
+  padding:16px 8px 24px 32px;
+
+  /* alt ve üst eşit 40px, sağ ve sol eşit 32px */
+  padding:40px 32px;
+
+
+  /* üst 24px sağ ve sol eşit 16px alt 32px */
+   padding:24px 16px 32px;
+
+
+
+}
+
+#root > footer {
+  border: 1px solid blue;
+}

@@ -1,0 +1,93 @@
+body {
+  /*   font ailesini değiştirmeliyim - IBM PLEX MONO - fonts.google.com    */
+  font-family: "IBM Plex Mono", monospace;
+  /* fallback */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+div {
+  border: 2px solid black;
+}
+
+header {
+  border: 2px solid blue;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+main {
+  border: 2px solid red;
+  background-color: white;
+}
+
+footer {
+  border: 2px solid blue;
+}
+
+
+
+
+/* 
+
+gs sınıfının üyesi elemanlar
+
+*/
+
+.gs {
+  color: red;
+}
+
+/* 
+
+gs sınıfının üyesi p elamanları
+
+
+
+*/
+
+p.gs{}
+
+
+
+/* p elemanı içerisinde gs sınıfının üyesi olan elemanlar   */
+p .gs{}
+
+
+
+/* hem gs hem young sınıfının üyesi elemanlar */
+
+
+.gs.young{}
+
+
+.young.gs{}
+
+
+
+/* hem p elemanı hem gs hem young sınıfının üyesi elemanlar */
+
+p.gs.young{}
+
+
+div > main > p{}
+
+
+
+.vip-level{}
+
+
+p.vip-level{}
+
+p.gs.young.vip-level{}
+
+
+/*  codepen  html css js playground */
+
+/* codesandbox  react  */

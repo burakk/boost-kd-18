@@ -1,0 +1,49 @@
+div {
+  border: 2px solid black;
+}
+
+header {
+  border: 2px solid blue;
+}
+
+main {
+  border: 2px solid red;
+  background-color: white;
+}
+
+footer {
+  border: 2px solid blue;
+}
+
+/* whitespace combinator - boşluk ( içindeki ) kullanarak  */
+header nav ul li p {
+  color: blue;
+}
+
+main p {
+  color: rgb(16, 205, 205);
+}
+
+/* child selector ( > ) combinator  */
+main > p {
+  font-weight: bold;
+}
+
+/* ( + ) combinator  */
+
+footer nav + p {
+  font-style: italic;
+}
+
+/* ( , ) */
+/* h1 elemanları ve h2 elemanları */
+h1,
+h2 {
+  border-bottom: 1px dotted pink;
+}
+
+/*  p ~ ul */
+/* p elemanı tarafından öncelenen a elemanları */
+p ~ a {
+  color: orangered;
+}

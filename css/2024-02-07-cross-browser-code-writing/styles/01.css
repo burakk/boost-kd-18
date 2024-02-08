@@ -1,0 +1,56 @@
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body.dark-theme {
+  color: white;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1{
+  font-size:48px;
+  font-weight:bold;
+}
+
+#root {
+  border: 1px solid black;
+}
+
+#root > header {
+  border: 1px solid blue;
+}
+
+main {
+  border: 1px solid red;
+  display:block;
+}
+
+main .circle{
+  border:2px solid red;
+  width:50px;
+  height:50px;
+  background-color:pink;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  -o-border-radius:50%;
+  -ms-border-radius:50%;
+  border-radius:50%;
+}
+
+#root > footer {
+  border: 1px solid blue;
+}
+
+
+@supports( display:grid ){
+
+  main{
+    display:grid;
+  }
+
+}

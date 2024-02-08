@@ -1,0 +1,20 @@
+body {
+  background-color: pink;
+}
+
+div {
+  border: 2px solid black;
+}
+
+header {
+  border: 2px solid blue;
+}
+
+main {
+  border: 2px solid red;
+  background-color: white;
+}
+
+footer {
+  border: 2px solid blue;
+}
