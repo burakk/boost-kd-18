@@ -31,7 +31,103 @@
       <header>
         <h1>Css display özelliği</h1>
       </header>
-      <main></main>
+      <main>
+        <h2>
+          Etiketlerin display özellik değerleri default olarak aşağıdaki
+          değerlerden biri olabilir.
+        </h2>
+        <ul>
+          <li>display:inline</li>
+          <li>display:block</li>
+          <li>display:inline-block</li>
+          <li>display:none</li>
+        </ul>
+
+        <h2>Duruma göre daha komplex display değerleri kullanılabilir.</h2>
+        <ul>
+          <li>display:flex</li>
+          <li>display:grid</li>
+        </ul>
+
+        <!-- lab inline -->
+        <section class="lab">
+          <h1>inline (satır içi) öğeler</h1>
+          <ul>
+            <li>inline öğeler satır okuma yönünde hizalanırlar</li>
+            <li>
+              width ve height verilemez. Bu etiketler alan etiketleri olarak
+              düşünülmemiştir.
+            </li>
+            <li>
+              default genişlikleri auto'dur. İçeriklerine göre otomatik değişir.
+            </li>
+            <li>Yükseklikler satır yüksekliğine bağlıdır. (line-height)</li>
+
+            <li>
+              Inline öğeler, kapsayıcılarından birine verilen text-align
+              özelliğinin left, right, center, justify değerleri kullanılarak
+              okuma yönünde hizalanabilirler
+            </li>
+            <li>
+              vertical-align özelliğinin top, middle, bottom değerleri ile satır
+              içerinde dikeyde hizalanabilirler
+            </li>
+          </ul>
+          <div class="restricted-area">
+            A B C <a href="#"></a><a href="#"></a>
+            <span></span>
+          </div>
+        </section>
+
+        <!-- lab block -->
+        <section class="lab">
+          <h1>block öğeler</h1>
+          <ul>
+            <li>
+              block yönü dikey yöndür. Block öğeler alt alta dizilme
+              eğilimindeler
+            </li>
+            <li>default genişlikleri 100%</li>
+            <li>default yükseklikleri auto'dur</li>
+            <li>width ve height verilebilir.</li>
+            <li>
+              Block öğelerden kalan pozitif boşluk - pozitive space, margin sağ
+              ve sol değeri auto yapılarak paylaştırabilir.
+            </li>
+          </ul>
+          <div class="restricted-area">
+            <div></div>
+            <article>I am the article</article>
+            A B C
+          </div>
+        </section>
+
+        <!-- lab inline-block -->
+        <section class="lab">
+          <h1>inline-block öğeler</h1>
+          <p>width ve height verebileceğin inline öğelerdir</p>
+          <div class="restricted-area">
+            A B C
+            <img
+              src="./images/61fV4UeHeLL._AC_UL640_QL65_.jpg"
+              alt=""
+              width="100px"
+            />
+          </div>
+        </section>
+
+        <!-- lab none -->
+        <section class="lab">
+          <h1>none öğeler</h1>
+          <p>Viewportta görünmez ve yer kaplamazlar</p>
+          <div class="restricted-area">
+            <button type="button">
+              <span>*</span>
+              Hello
+            </button>
+          </div>
+        </section>
+      </main>
       <footer>
         <p>boost kd-18</p>
       </footer>

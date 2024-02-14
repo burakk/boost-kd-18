@@ -1,0 +1,16 @@
+body {
+  background-color: blue;
+}
+
+/* break point */
+@media screen and (min-width: 750px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: orange;
+  }
+}

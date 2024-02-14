@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+p {
+  margin: 24px 0;
+}
+
+#root {
+  margin: 48px;
+}
+
+#root > header {
+  padding-bottom: 24px;
+}
+
+main {
+  border: 4px solid rgb(148, 195, 195);
+  border-left: none;
+  border-right: none;
+  padding: 24px 0;
+}
+
+main section {
+  margin-bottom: 48px;
+}
+
+/* Exercise 1*/
+.exercise-1 .container {
+  border: 2px solid black;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exercise-1 .container > nav ul {
+  display: flex;
+  column-gap: 16px;
+}
+
+/* Exercise 2*/
+.exercise-2 .container {
+  border: 2px solid red;
+  display: flex;
+  column-gap: 24px;
+  height: 400px;
+  padding: 24px;
+}
+
+.exercise-2 .container > .col {
+  border: 2px solid black;
+
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+/* Exercise 3 */
+.exercise-3 .container {
+  border: 2px solid black;
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.exercise-3 .container > nav {
+  border: 2px solid red;
+}
+
+.exercise-3 .container > nav.primary-nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.exercise-4 .container {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exercise-4 .container > .wrapper-navs {
+  border: 2px solid red;
+  display: flex;
+}
+
+.exercise-5 .container {
+  border: 2px solid black;
+  padding: 24px;
+}
+
+.exercise-5 .container > .row {
+  border: 2px solid blue;
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 8px;
+}
+
+.exercise-5 .container > .row > .col {
+  border: 2px solid orange;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.exercise-6 .container {
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+}
+
+.exercise-6 .container > .col {
+  border: 2px solid red;
+  flex-basis: calc( ( 100% - 24px ) / 4 );
+}

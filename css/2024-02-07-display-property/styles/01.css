@@ -15,8 +15,18 @@ a {
   color: inherit;
 }
 
+li {
+  margin: 24px;
+  list-style-type: disc;
+}
+
 h1 {
-  font-size: 24px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -37,6 +47,70 @@ main {
   border-left: none;
   border-right: none;
   padding: 24px 0;
+}
+
+main section.lab {
+  border: 1px solid gray;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+main section.lab .restricted-area {
+  background-color: pink;
+  padding: 24px;
+}
+
+main section.lab:nth-of-type(1) .restricted-area {
+  text-align: center;
+}
+
+main section.lab:nth-of-type(1) .restricted-area a {
+  border: 2px solid red;
+  width: 1000px;
+  height: 1000px;
+}
+
+main section.lab:nth-of-type(1) .restricted-area span {
+  border: 2px solid yellow;
+}
+
+main section.lab:nth-of-type(1) .restricted-area a:nth-child(even) {
+  border-color: blue;
+}
+
+main section.lab:nth-of-type(2) .restricted-area {
+  text-align: center;
+}
+
+main section.lab:nth-of-type(2) .restricted-area div {
+  border: 2px solid black;
+  width: 300px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin: 0 auto;
+}
+
+main section.lab:nth-of-type(2) .restricted-area article {
+  border: 3px solid orange;
+  width: 300px;
+}
+
+main section.lab:nth-of-type(3) .restricted-area {
+  text-align: center;
+}
+
+main section.lab:nth-of-type(3) .restricted-area img{
+  vertical-align: bottom;
+}
+
+main section.lab:nth-of-type(4) .restricted-area button span {
+  display: none;
+}
+
+main section.lab:nth-of-type(4) .restricted-area button:hover span {
+  display: inline;
 }
 
 #root > footer {

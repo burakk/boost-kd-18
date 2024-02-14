@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+p {
+  margin: 24px 0;
+}
+
+#root {
+  margin: 48px;
+}
+
+#root > header {
+  padding-bottom: 24px;
+}
+
+main {
+  border: 4px solid rgb(148, 195, 195);
+  border-left: none;
+  border-right: none;
+  padding: 24px 0;
+}
+
+main section {
+  border: 2px solid black;
+  margin-bottom: 48px;
+  width: 300px;
+  height: 200px;
+}
+
+.box {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+}
+
+.box:nth-of-type(2) {
+  background-color: pink;
+  position: relative;
+
+  /* bir öğenin position değerini static'den farklı yaparsan 
+  z-index'i 0 olur */
+
+  /* top, right, bottom, left */
+  top: -25px;
+  left: 25px;
+
+  /* z-index */
+  z-index:1000;
+}
+
+.box:nth-of-type(3) {
+  background-color: orange;
+  position: relative;
+
+  top: -50px;
+  left: 50px;
+
+  z-index:999;
+}
