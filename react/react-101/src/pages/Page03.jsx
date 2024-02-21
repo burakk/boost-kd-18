@@ -26,21 +26,23 @@ export default function Page03() {
             <Avatar2 url="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/440px-Tesla_circa_1890.jpeg" name="Nikola Tesla" />
 
 
+
+            {/* <Modal title="Üye olun" hasBorders={false}>
+              <FrmRegister/>
+            </Modal> */}
             
-            <Modal title="Üye olun" hasBorders={false} >
-                <>
-                    <h1>Yeni üye</h1>
-                    <p>üyelik için bilgilerinizi giriniz</p>
-                </>
-            </Modal>
-            <Modal title="Üyelik iptali" hasBorders={true}>
-                <>
-                    <h1>İptal</h1>
-                    <p>üyelik iptali için bilgilerinizi giriniz</p>
-                </>
-            </Modal>
         </section>
     )
 
 
+}
+
+
+
+function FrmLogin(){
+    return <h1>Login</h1>
+}
+
+function FrmRegister() {
+    return <h1>Register</h1>
 }
