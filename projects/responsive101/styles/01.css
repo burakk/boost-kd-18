@@ -75,6 +75,7 @@ main {
   height: 4px;
   width: 100%;
   background-color: black;
+  transition: transform 500ms;
 }
 
 .btn-toggle-hamburger-nav.off span:nth-child(1) {

@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  margin: 24px 0;
+}
+
+#root {
+  margin: 48px;
+}
+
+#root > header {
+  padding-bottom: 24px;
+}
+
+main {
+  border: 4px solid rgb(148, 195, 195);
+  border-left: none;
+  border-right: none;
+  padding: 24px 0;
+}
+
+#root > footer {
+  padding-top: 24px;
+}
+
+/* logos */
+
+.logo {
+  font-size: 40px;
+}
+
+/* Todo List */
+#todo-list > li{
+  border-bottom:1px dotted rgb(215, 215, 215);
+  padding:8px;
+  margin-top: 24px;
+}
+
+/* Forms */
+
+#frm-add-todo-item {
+  display: flex;
+  flex-direction: column;
+  row-gap:8px;
+}
+
+#frm-add-todo-item input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#frm-add-todo-item button[type="submit"]{
+  height:40px;
+  background-color: rgb(62, 129, 134);
+  font-size: 1rem;
+  border:none;
+  border-radius: 4px;
+  color:white;
+};

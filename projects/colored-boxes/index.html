@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Renkli Kutular</title>
+    <script src="01.js" defer></script>
+    <style>
+      main {
+        border: 1px solid black;
+        padding: 24px;
+        margin: 24px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <h1>Renkli kutular</h1>
+        <button id="btn-create-box" type="button">
+          Renkli bir kutu oluştur
+        </button>
+      </header>
+
+      <main></main>
+
+      <footer><p>Kd-18 boost</p></footer>
+    </div>
+  </body>
+</html>

@@ -8,6 +8,7 @@
   width: 600px;
   height: 400px;
   position: relative;
+  overflow: hidden;
 }
 
 .carousel > ul {
@@ -16,6 +17,7 @@
   height: 100%;
   display: flex;
   margin-left: 0%;
+  transition: margin-left 0.5s 500ms cubic-bezier(0.94, 0.055, 0.06, 0.94);
 }
 
 .carousel > ul > li {
@@ -47,8 +49,8 @@
   border-radius: 50%;
 }
 
-.carousel > ul > li > img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
+.carousel > ul > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
