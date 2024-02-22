@@ -1,0 +1,19 @@
+
+.Card {
+    border:2px solid red;
+}
+
+.Card > figure {
+    height:200px;
+}
+
+.Card > figure >img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.CardContent{
+    padding:24px;
+
+}

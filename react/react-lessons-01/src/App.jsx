@@ -11,9 +11,9 @@ import Page04 from "./pages/Page04";
 
 export default function App() {
 
-  const path = "/01";
+  const path = "/03";
 
-
+ 
   return (
     <Fragment>
       <header>
@@ -21,14 +21,10 @@ export default function App() {
         <Nav />
       </header>
       <main>
-        <Page01 />
-
-        <Page02 />
-
-        <Page03 />
-
-
-        <Page04 />
+       { path === "/01" && <Page01/>}
+       { path === "/02" && <Page02/>}
+       { path === "/03" && <Page03/>}
+       { path === "/04" && <Page04/>}
 
       </main>
       <footer>F</footer>

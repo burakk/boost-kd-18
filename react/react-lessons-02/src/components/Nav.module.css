@@ -1,0 +1,10 @@
+.Nav {
+    display: flex;
+    background-color: rgba(217, 20, 20, 0.5);
+    font-family: "Anta", sans-serif;
+    justify-content: space-between;
+}
+
+.NavItem:hover {
+    background-color: rgb(247, 6, 6, 1);
+}

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+  }
+
+  img{
+    max-width:100%;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 700;
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+    margin: 16px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color:inherit;
+  }
+  
+  #root > header {
+    background-color: #333;
+    color: white;
+    padding: 24px;
+  }
+  
+  li {
+    margin: 24px;
+  }
+  
+  main {
+    padding: 24px 24px 224px;
+  }
+  
+  #root > footer {
+    padding: 24px;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .logo svg {
+    fill: white;
+  }

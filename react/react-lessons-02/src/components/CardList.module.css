@@ -1,0 +1,20 @@
+.CardList {
+  border: 1px solid gray;
+  border-radius: 4px;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.CardList > ul {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.CardList > ul > li {
+  flex: 1 1 0;
+}
