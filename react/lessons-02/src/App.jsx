@@ -4,7 +4,7 @@ import Page01 from "./pages/Page01";
 import Page02 from "./pages/Page02";
 
 export default function App() {
-  const path = "/01";
+  const path = "/02";
 
   return (
     <>

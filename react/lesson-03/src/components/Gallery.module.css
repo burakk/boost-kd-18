@@ -1,0 +1,13 @@
+.Gallery {
+  max-width: 33.333%;
+  text-align: center;
+  border: 1px solid purple;
+  padding: 24px;
+}
+
+.Gallery figure img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
