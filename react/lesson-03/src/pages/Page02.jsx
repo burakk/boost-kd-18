@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { DATA_FAMOUS_ACTORS } from "../data";
-import galleryStyles from "../components/Gallery.module.css"
+
+import Gallery from "../components/Gallery";
 
 const Page02 = () => {
     return (
@@ -10,7 +11,11 @@ const Page02 = () => {
             <ButtonV1 />
             <ButtonV2 />
 
+            <ButtonV3 />
             <Gallery data={DATA_FAMOUS_ACTORS} />
+
+
+            <FormUserMessage />
         </section>
     )
 }
@@ -49,42 +54,79 @@ const ButtonV2 = () => {
 }
 
 
+const ButtonV3 = () => {
 
-const Gallery = ({ data }) => {
-    const [index, setIndex] = useState(0);
-    const isFirstSlide = index === 0;
-    const isLastSlide = index === data.length - 1;
+    const [counter, setCounter] = useState(0);
+    const [rand, setRandom] = useState(Math.random());
 
-    console.log("Ben galeri render ediliyorum", index);
+    function handleClick(e) {
 
-    function handlePrevious() {
-        if (isFirstSlide) return;
-        setIndex(index - 1);
-    }
-    function handleNext() {
-        if (isLastSlide) return;
-        setIndex(index + 1);
+        setCounter(counter + 1);
+        setCounter(counter + 1);
+        setCounter(counter + 1);
+        setCounter(counter + 1);
+        setCounter(counter + 1);
+
+        alert(counter);
+
+        setTimeout(() => { alert(counter) }, 3000)
+
+        //rerender triggers
     }
 
     return (
-        <div className={galleryStyles.Gallery}>
-            <h2>Galeri</h2>
-            <p>Toplam {data.length} içinde {index + 1}. gösteriliyor </p>
-            <button onClick={handlePrevious} disabled={isFirstSlide}>önceki sanatçı</button>
-            <button onClick={handleNext} disabled={isLastSlide}>sonraki sanatçı</button>
-            <div>
-                <figure>
-                    <img src={data[index].src} alt={data[index].name} />
-
-                </figure>
-                <h3>{data[index].name}</h3>
-                <p>{data[index].descr}</p>
-            </div>
-        </div>
-
+        <button type="button" onClick={handleClick}>Sayaç Arttır: {counter}</button>
     )
-
 }
+
+
+
+
+
+export function FormUserMessage() {
+
+    console.log("Ben kullanıcı mesaj formu render ediliyorum")
+    const [message, setMessage] = useState("");
+    const [isSent, setIsSent] = useState(false);
+
+
+    function handleMessageChange(e) {
+        setMessage(e.target.value);
+    }
+
+    function handleMessageSubmit(e) {
+        e.preventDefault();
+        sendMessage(message);
+        setIsSent(true);
+    }
+
+    if (isSent) {
+        return <p>Mesajınız yola çıktı...</p>
+    }
+
+
+    return (
+        <form onSubmit={handleMessageSubmit}>
+            <h1>Hello User Message Form</h1>
+
+            <textarea onChange={handleMessageChange} name="userMessage" id="inpUserMessage" value={message}></textarea>
+            Mesajınız: {message}
+            <button type="submit">Gönder</button>
+        </form>
+    );
+}
+
+
+
+
+
+
+function sendMessage(message) {
+
+    alert(message);
+}
+
+
 
 
 export default Page02;

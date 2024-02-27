@@ -7,10 +7,13 @@ const MainNav = ({ onChangePath }) => (
                 <NavLink to="01/" onClick={onChangePath}>Interaction - Etkileşim</NavLink>
             </li>
             <li>
-                <NavLink to="02/" onClick={onChangePath}>Bir komponentin hafızası - State</NavLink>
+                <NavLink to="/02" onClick={onChangePath}>Bir komponentin hafızası - State</NavLink>
             </li>
             <li>
-                <NavLink to="03/" onClick={onChangePath}> - </NavLink>
+                <NavLink to="/03" onClick={onChangePath}> Komponent hafızasında object saklamak ve güncellemek </NavLink>
+            </li>
+            <li>
+                <NavLink to="/04" onClick={onChangePath}> Komponent hafızasında array - dizi saklamak ve güncellemek </NavLink>
             </li>
         </ul>
     </nav>

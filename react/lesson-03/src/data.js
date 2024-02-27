@@ -21,3 +21,8 @@ export const DATA_FAMOUS_ACTORS = [
       "Sydney Bernice Sweeney (born September 12, 1997) is an American actress.[1] She is best known for her roles in the HBO drama series Euphoria (2019–present) and the first season of the anthology series The White Lotus (2021), which earned her nominations for two Primetime Emmy Awards.[2][3]",
   },
 ];
+
+export const DATA_TODOS = [
+  { id: 2, content: "Spor yap", compeleted:true },
+  { id: 14, content: "Yürü", completed:false  },
+];

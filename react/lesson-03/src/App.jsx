@@ -1,14 +1,18 @@
+import { useState } from "react";
 import { MainLogo } from "./components/Logo";
 import { MainNav } from "./components/Nav";
 import Page01 from "./pages/Page01";
 import Page02 from "./pages/Page02";
+import Page03 from "./pages/Page03";
+import Page04 from "./pages/Page04";
 
 
 export default function App() {
-  const path = "/02";
+  const [path, setPath] = useState("/01");
 
   function changePath(to) {
-    alert(to + " değiştiriliyor")
+
+    setPath(to);
   }
 
   //changePath funksiyonunu NavLink öğelerine geçirebilir misiniz
@@ -23,6 +27,10 @@ export default function App() {
         {path === "/01" && <Page01 />}
 
         {path === "/02" && <Page02 />}
+
+        {path === "/03" && <Page03 />}
+
+        {path === "/04" && <Page04 />}
 
       </main>
       <footer>
