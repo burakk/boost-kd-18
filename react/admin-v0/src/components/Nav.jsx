@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
+import styles from './Nav.module.css';
 
 export function Nav() {
+
     return (
-        <nav>
+        <nav className={styles.NavMain}>
             <ul>
                 <li>
                     <NavLink to="/">Ana sayfa</NavLink>

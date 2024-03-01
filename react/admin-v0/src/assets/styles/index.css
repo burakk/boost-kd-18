@@ -56,6 +56,8 @@ h3 {
   color: var(--neutral-clr-4);
   padding: var(--spc-lg);
   display: flex;
+  align-items: baseline;
+  gap: 24px;
 }
 
 main {
