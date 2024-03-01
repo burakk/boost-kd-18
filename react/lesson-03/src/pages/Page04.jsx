@@ -1,6 +1,8 @@
 import { useState } from "react";
 import TodoList from "../components/TodoList";
 import { DATA_TODOS } from "../data";
+import MovingShapes from "../components/MovingShapes";
+import { DATA_SHAPES } from "../data";
 
 export default function Page04() {
 
@@ -11,6 +13,8 @@ export default function Page04() {
             <InspiringPeople />
 
             <TodoList data={DATA_TODOS} />
+
+            <MovingShapes data={DATA_SHAPES} />
         </section>
     )
 

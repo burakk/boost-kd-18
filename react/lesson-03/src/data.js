@@ -23,6 +23,14 @@ export const DATA_FAMOUS_ACTORS = [
 ];
 
 export const DATA_TODOS = [
-  { id: 2, content: "Spor yap", compeleted:true },
-  { id: 14, content: "Yürü", completed:false  },
+  { id: 2, content: "Spor yap", completed: true },
+  { id: 14, content: "Yürü", completed: false },
+];
+
+export const DATA_SHAPES = [
+  { id: 12, type: "square", x: 0, y: 0 },
+  { id: 14, type: "circle", x: 40, y: 0 },
+  { id: 16, type: "square", x: 80, y: 0 },
+  { id: 18, type: "circle", x: 120, y: 0 },
+  { id: 19, type: "square", x: 160, y: 0 },
 ];

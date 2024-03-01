@@ -4,6 +4,8 @@ export default function TodoList({ data }) {
     const [content, setContent] = useState("");
     const [todosData, setTodosData] = useState(data);
 
+    console.log(todosData);
+
     function handleContentChange(e) {
         setContent(e.target.value);
     }
@@ -28,6 +30,28 @@ export default function TodoList({ data }) {
         setTodosData(todosData.filter(td => td.id !== id));
     }
 
+
+    function handleUpdate(id) {
+        //alert(id); // 2
+        //todosData 
+        const selected = todosData.filter((t) => t.id === id); //[ {id:2, completed:false, content:"spor"} ] 
+
+        let newObj = { ...selected[0], completed: !selected[0].completed };
+
+        // {id:2, completed:true, content:"spor"}
+
+        const upadatedTodosData = todosData.map((t) => {
+
+            if (t.id === id) {
+                return { ...t, completed: !t.completed }
+            }
+            return t;
+        });
+
+        setTodosData(upadatedTodosData);
+
+    }
+
     return (
         <div>
             <h2>Yapılacaklar listesi</h2>
@@ -45,12 +69,17 @@ export default function TodoList({ data }) {
                 <button>Ekle</button>
             </form>
             <ul>
-                {  todosData.map((todoData) => (
-                    <li key={todoData.id}>
-                        {todoData.content}{" "}
+                {todosData.map((t) => (
+                    <li key={t.id}>
+
+
+                        <input type="checkbox" name="" id="" checked={t.completed} onChange={(e) => { handleUpdate(t.id) }} />
+
+
+                        {t.content}{" "}
                         <button
                             onClick={(e) => {
-                                handleDeleteTodo(todoData.id);
+                                handleDeleteTodo(t.id);
                             }}
                         >
                             sil

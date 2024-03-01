@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+/*  html */
+:root {
+  /* Custom Properties */
+  /* color */
+
+  --clr-primary: pink;
+  --clr-secondary: rgb(152, 202, 196);
+
+  /* spacing  */
+  --spc-lg: 40px;
+
+  /* typography */
+  --t-s-lg: 57px;
+}
+
+main {
+  min-height: 500px;
+  background-color: #ddd;
+  padding: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+form button {
+  height: 40px;
+  border: none;
+  background-color: var(--clr-secondary);
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button[disabled] {
+  opacity: 0.5;
+}
+
+form textarea {
+  font-size: 0.9rem;
+  padding: 8px;
+}
+
+table {
+  border: 1px solid gray;
+}
+
+table td {
+  border: 1px solid rgb(172, 172, 172);
+}
+
+table td strong {
+  color: orangered;
+}
